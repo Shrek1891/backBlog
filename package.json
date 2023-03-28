@@ -2,14 +2,17 @@
   "name": "complex-app",
   "version": "1.0.0",
   "description": "hey dude",
-  "main": "db.js",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/mongodb/node-mongodb-native.git"
   },
   "scripts": {
-    "watch": "nodemon db",
-    "start": "node db",
+    "watch": "nodemon index",
+    "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
