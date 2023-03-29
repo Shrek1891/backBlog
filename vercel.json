@@ -22,7 +22,7 @@
         },
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "Origin"
+          "value": "https://back-blog.vercel.app/"
         },
         {
           "key": "Access-Control-Allow-Methods",
