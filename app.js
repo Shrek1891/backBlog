@@ -9,10 +9,13 @@ app.use(express.json())
 app.use("/", require("./router"))
 
 const server = require("http").createServer(app)
-const io = require("socket.io")(server, {
-  pingTimeout: 30000,
-  cors: true
-})
+const io = require("socket.io")(httpServer, {
+  cors: {
+    origin: "https://back-blog.vercel.app/",
+    methods: ["GET", "POST"],
+    credentials: true
+  }
+});
 
 io.on("connection", function(socket) {
   socket.on("chatFromBrowser", function(data) {
