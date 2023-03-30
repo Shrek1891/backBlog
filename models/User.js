@@ -6,7 +6,7 @@ const md5 = require('md5')
 let User = function(data, getAvatar) {
   this.data = data
   this.errors = []
-  if (getAvatar == undefined) {getAvatar = false}
+  if (getAvatar === undefined) {getAvatar = false}
   if (getAvatar) {this.getAvatar()}
 }
 
@@ -134,4 +134,3 @@ User.doesEmailExist = function(email) {
 module.exports = User
 
 
-28fd21d90a380b4c53738eccd4f63def28ad3bf6
