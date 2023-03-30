@@ -132,3 +132,6 @@ User.doesEmailExist = function(email) {
 }
 
 module.exports = User
+
+
+28fd21d90a380b4c53738eccd4f63def28ad3bf6
